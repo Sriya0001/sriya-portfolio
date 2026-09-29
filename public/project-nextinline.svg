@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5ECDA" />
+      <stop offset="100%" stop-color="#E8D1A7" />
+    </linearGradient>
+    <linearGradient id="activeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#442D1C" />
+      <stop offset="100%" stop-color="#743014" />
+    </linearGradient>
+    <linearGradient id="waitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#84592B" />
+      <stop offset="100%" stop-color="#9D9167" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#442D1C" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+
+  <!-- Subtle Decorative Grid Lines -->
+  <g stroke="#D4BC8E" stroke-width="1" stroke-dasharray="6,6" opacity="0.4">
+    <line x1="100" y1="120" x2="1100" y2="120" />
+    <line x1="100" y1="560" x2="1100" y2="560" />
+    <line x1="600" y1="80" x2="600" y2="600" />
+  </g>
+
+  <!-- Title & Subtitle Badge -->
+  <g transform="translate(600, 95)" text-anchor="middle">
+    <rect x="-170" y="-28" width="340" height="42" rx="21" fill="#442D1C" />
+    <text x="0" y="-2" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="800" font-size="18" letter-spacing="1.5">NEXT IN LINE</text>
+    <text x="0" y="38" fill="#743014" font-family="'Outfit', sans-serif" font-weight="600" font-size="14" letter-spacing="1">AUTOMATED APPLICANT PIPELINE &amp; WAITLIST BUFFER</text>
+  </g>
+
+  <!-- Left: Active Review Stage -->
+  <g transform="translate(180, 200)" filter="url(#cardShadow)">
+    <rect width="380" height="340" rx="24" fill="#FDFBF7" stroke="#D4BC8E" stroke-width="2" />
+    <rect width="380" height="56" rx="24" fill="#442D1C" />
+    <!-- Header title -->
+    <text x="28" y="35" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="16">Active Review Pool</text>
+    <rect x="290" y="16" width="65" height="24" rx="12" fill="#84592B" />
+    <text x="322" y="32" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" text-anchor="middle">SLOT: 3/3</text>
+
+    <!-- Candidate Card 1 -->
+    <g transform="translate(24, 76)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" fill-opacity="0.4" stroke="#D4BC8E" stroke-width="1.5" />
+      <circle cx="36" cy="34" r="16" fill="#442D1C" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">01</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="700" font-size="14">Candidate #104 · Engineering</text>
+      <text x="68" y="48" fill="#743014" font-family="'Outfit', sans-serif" font-weight="600" font-size="12">Stage: Technical Screen · In Progress</text>
+    </g>
+
+    <!-- Candidate Card 2 -->
+    <g transform="translate(24, 156)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" fill-opacity="0.4" stroke="#D4BC8E" stroke-width="1.5" />
+      <circle cx="36" cy="34" r="16" fill="#442D1C" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">02</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="700" font-size="14">Candidate #107 · Backend</text>
+      <text x="68" y="48" fill="#743014" font-family="'Outfit', sans-serif" font-weight="600" font-size="12">Stage: Architecture Review</text>
+    </g>
+
+    <!-- Candidate Card 3 -->
+    <g transform="translate(24, 236)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" fill-opacity="0.4" stroke="#D4BC8E" stroke-width="1.5" />
+      <circle cx="36" cy="34" r="16" fill="#442D1C" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">03</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="700" font-size="14">Candidate #112 · Full-Stack</text>
+      <text x="68" y="48" fill="#84592B" font-family="'Outfit', sans-serif" font-weight="600" font-size="12">Stage: Final Decision Pending</text>
+    </g>
+  </g>
+
+  <!-- Middle Transition Arrow / Pulse -->
+  <g transform="translate(580, 360)">
+    <circle cx="20" cy="0" r="28" fill="#84592B" />
+    <path d="M12 -8 L28 0 L12 8" fill="none" stroke="#E8D1A7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Right: Automated Queue & Waitlist Buffer -->
+  <g transform="translate(640, 200)" filter="url(#cardShadow)">
+    <rect width="380" height="340" rx="24" fill="#FDFBF7" stroke="#D4BC8E" stroke-width="2" />
+    <rect width="380" height="56" rx="24" fill="#84592B" />
+    <!-- Header title -->
+    <text x="28" y="35" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="16">Automated Waitlist Queue</text>
+    <rect x="270" y="16" width="85" height="24" rx="12" fill="#442D1C" />
+    <text x="312" y="32" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" text-anchor="middle">NEXT IN LINE</text>
+
+    <!-- Waitlist Item 1 (Highlighted as next) -->
+    <g transform="translate(24, 76)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" stroke="#84592B" stroke-width="2" />
+      <circle cx="36" cy="34" r="16" fill="#84592B" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">✦</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="800" font-size="14">Candidate #115 · Next Up</text>
+      <text x="68" y="48" fill="#743014" font-family="'Outfit', sans-serif" font-weight="600" font-size="12">Auto-promotes when slot opens</text>
+    </g>
+
+    <!-- Waitlist Item 2 -->
+    <g transform="translate(24, 156)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" fill-opacity="0.25" stroke="#D4BC8E" stroke-width="1.5" stroke-dasharray="4,4" />
+      <circle cx="36" cy="34" r="16" fill="#9D9167" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">05</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">Candidate #119 · Position: 2</text>
+      <text x="68" y="48" fill="#9D9167" font-family="'Outfit', sans-serif" font-weight="500" font-size="12">Waiting in queue buffer</text>
+    </g>
+
+    <!-- Waitlist Item 3 -->
+    <g transform="translate(24, 236)">
+      <rect width="332" height="68" rx="14" fill="#E8D1A7" fill-opacity="0.25" stroke="#D4BC8E" stroke-width="1.5" stroke-dasharray="4,4" />
+      <circle cx="36" cy="34" r="16" fill="#9D9167" />
+      <text x="36" y="39" fill="#E8D1A7" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" text-anchor="middle">06</text>
+      <text x="68" y="30" fill="#442D1C" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">Candidate #124 · Position: 3</text>
+      <text x="68" y="48" fill="#9D9167" font-family="'Outfit', sans-serif" font-weight="500" font-size="12">Waiting in queue buffer</text>
+    </g>
+  </g>
+
+  <!-- Bottom Subtitle pill -->
+  <g transform="translate(600, 615)" text-anchor="middle">
+    <text x="0" y="0" fill="#84592B" font-family="'Outfit', sans-serif" font-weight="700" font-size="13">
+      ⚡ ZERO MANUAL INTERVENTION · AUTONOMOUS FIFO PIPELINE &amp; SLOT CAPACITY CONTROL
+    </text>
+  </g>
+</svg>
